@@ -13,6 +13,8 @@ Lazygit
 gitconfig
 zsh
 ohmyzsh
+WezTerm
+Zellij
 
 ## To set before
 WezTerm
