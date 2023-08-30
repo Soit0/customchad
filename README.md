@@ -8,21 +8,15 @@ Everything is still lazyloaded.
 
 Simply run Mason and Lazy.nvim to setup everything.
 
-## DotFiles
-Lazygit
-gitconfig
-zsh
-ohmyzsh
-WezTerm
-Zellij
-
 ## To set before
-WezTerm
-Zellij
-Lazygit
 NerdFont with ligature
+Tmux
+Lazygit
 gcc
-pnpm
+node
+npm / yarn / pnpm
+nvm
+Delta
 
 ### Zsh conf
 Oh my zsh -> git zsh-autosuggestions zsh-syntax-highlighting z copyfile dirhistory jsontools
@@ -31,7 +25,3 @@ lazygit
 fdfind
 batcat
 rgrep
-
-### Nvim
-Neovim
-nvChad
