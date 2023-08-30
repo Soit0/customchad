@@ -96,8 +96,17 @@ local plugins = {
   },
   {
     "folke/twilight.nvim",
-    event = "VeryLazy"
-  }
+    event = "VeryLazy",
+  },
+  {
+    "kylechui/nvim-surround",
+    event = "VeryLazy",
+    config = function()
+      require("nvim-surround").setup {
+        -- Configuration here, or leave empty to use defaults
+      }
+    end,
+  },
 }
 
 return plugins

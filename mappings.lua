@@ -3,8 +3,10 @@ local M = {}
 M.general = {
   n = {
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
+    ["<leader>sv"] = { "<cmd> vs <CR>", "Vertical split" },
+    ["<leader>ss"] = { "<cmd> sp <CR>", "Vertical split" },
     ["<leader>bx"] = { "<cmd> %bd|e#|bd#<cr>|'\"<CR> <cmd> only<CR>", "Close all buffers but this one" },
-    ["<leader><Enter>"] = { "<cmd> noh <CR>" },
+    ["<leader><Enter>"] = { "<cmd> noh <CR>", "Remove highlight" },
   },
 }
 

@@ -5,22 +5,22 @@ local M = {}
 local highlights = require "custom.highlights"
 
 M.ui = {
-  theme = "gruvchad",
-  theme_toggle = { "gruvchad", "one_light" },
-
+  theme = "gruvbox",
+  theme_toggle = { "gruvbox", "gruvbox_light" },
+  -- transparency = true,
   hl_override = highlights.override,
   hl_add = highlights.add,
   nvdash = {
     header = {
-    "          ▀████▀▄▄              ▄█ ",
-    "            █▀    ▀▀▄▄▄▄▄    ▄▄▀▀█ ",
-    "    ▄        █          ▀▀▀▀▄  ▄▀  ",
-    "   ▄▀ ▀▄      ▀▄              ▀▄▀  ",
-    "  ▄▀    █     █▀   ▄█▀▄      ▄█    ",
-    "  ▀▄     ▀▄  █     ▀██▀     ██▄█   ",
-    "   ▀▄    ▄▀ █   ▄██▄   ▄  ▄  ▀▀ █  ",
-    "    █  ▄▀  █    ▀██▀    ▀▀ ▀▀  ▄▀  ",
-    "   █   █  █      ▄▄           ▄▀   "
+      "          ▀████▀▄▄              ▄█ ",
+      "            █▀    ▀▀▄▄▄▄▄    ▄▄▀▀█ ",
+      "    ▄        █          ▀▀▀▀▄  ▄▀  ",
+      "   ▄▀ ▀▄      ▀▄              ▀▄▀  ",
+      "  ▄▀    █     █▀   ▄█▀▄      ▄█    ",
+      "  ▀▄     ▀▄  █     ▀██▀     ██▄█   ",
+      "   ▀▄    ▄▀ █   ▄██▄   ▄  ▄  ▀▀ █  ",
+      "    █  ▄▀  █    ▀██▀    ▀▀ ▀▀  ▄▀  ",
+      "   █   █  █      ▄▄           ▄▀   ",
     },
     load_on_startup = true,
     buttons = {
@@ -34,7 +34,7 @@ M.ui = {
   },
   statusline = {
     theme = "minimal",
-    separator_style = "block"
+    separator_style = "block",
   }
 }
 
