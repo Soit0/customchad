@@ -7,14 +7,17 @@ M.general = {
     ["<leader>ss"] = { "<cmd> sp <CR>", "Vertical split" },
     ["<leader>bx"] = { "<cmd> %bd|e#|bd#<cr>|'\"<CR> <cmd> only<CR>", "Close all buffers but this one" },
     ["<leader><Enter>"] = { "<cmd> noh <CR>", "Remove highlight" },
+    ["H"] = { "^", "Go to line start" },
+    ["L"] = { "$", "Go to line end" },
   },
 }
 
 M.lspsaga = {
   n = {
-    ["<leader>sf"] = { "<cmd> Lspsaga lsp_finder <CR>", "finder" },
+    ["<leader>sf"] = { "<cmd> Lspsaga finder <CR>", "finder" },
     ["<leader>sp"] = { "<cmd> Lspsaga peek_definition <CR>", "peek_definition" },
     ["<leader>sg"] = { "<cmd> Lspsaga goto_definition <CR>", "goto_definition" },
+    ["gd"] = { "<cmd> Lspsaga goto_definition <CR>", "goto_definition" },
     ["<leader>sc"] = { "<cmd> Lspsaga code_action <CR>", "code_action" },
     ["<leader>sh"] = { "<cmd> Lspsaga hover_doc <CR>", "hover_doc" },
     ["<leader>sw"] = { "<cmd> Lspsaga show_workspace_diagnostics <CR>", "show_workspace_diagnostics" },

@@ -14,6 +14,9 @@ local plugins = {
           require "custom.configs.null-ls"
         end,
       },
+      {
+        "Hoffs/omnisharp-extended-lsp.nvim",
+      }
     },
     config = function()
       require "plugins.configs.lspconfig"
@@ -49,7 +52,13 @@ local plugins = {
     "glepnir/lspsaga.nvim",
     event = "LspAttach",
     config = function()
-      require("lspsaga").setup {}
+      require("lspsaga").setup {
+        symbol_in_winbar = {
+          enable = true,
+          sign = true,
+          virtual_text = true,
+        },
+      }
     end,
     dependencies = {
       { "nvim-tree/nvim-web-devicons" },
@@ -106,6 +115,18 @@ local plugins = {
         -- Configuration here, or leave empty to use defaults
       }
     end,
+  },
+  {
+    "ray-x/lsp_signature.nvim",
+    event = "VeryLazy",
+    opts = {},
+    config = function(_, opts)
+      require("lsp_signature").setup(opts)
+    end,
+  },
+  {
+    "edkolev/tmuxline.vim",
+    event = "VeryLazy",
   },
 }
 
