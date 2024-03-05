@@ -17,6 +17,7 @@ M.treesitter = {
     "hjson",
     "tsx",
     "c",
+    "nix",
     "markdown",
     "markdown_inline",
   },
