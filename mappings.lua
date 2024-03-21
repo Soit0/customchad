@@ -10,7 +10,7 @@ M.general = {
     ["H"] = { "^", "Go to line start" },
     ["L"] = { "$", "Go to line end" },
     ["<C-x>"] = { "<cmd> x <CR>", "Save and quit" },
-    ["<C-q>"] = { "<cmd> q <CR>", "Quit" },
+    ["<C-q>"] = { "<cmd> q! <CR>", "Quit" },
   },
 }
 
