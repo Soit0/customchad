@@ -9,6 +9,8 @@ M.general = {
     ["<leader><Enter>"] = { "<cmd> noh <CR>", "Remove highlight" },
     ["H"] = { "^", "Go to line start" },
     ["L"] = { "$", "Go to line end" },
+    ["<C-x>"] = { "<cmd> x <CR>", "Save and quit" },
+    ["<C-q>"] = { "<cmd> q <CR>", "Quit" },
   },
 }
 

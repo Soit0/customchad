@@ -202,7 +202,8 @@ local plugins = {
     event = "VeryLazy",
     config = function()
       require("treesitter-context").setup({
-        separator = "-"
+        separator = "-",
+        multiline_threshold = 2;
       })
     end,
   },
