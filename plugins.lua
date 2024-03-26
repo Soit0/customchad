@@ -207,6 +207,13 @@ local plugins = {
       })
     end,
   },
+  {
+    "windwp/nvim-ts-autotag",
+    event = "VeryLazy",
+    config = function ()
+      require('nvim-ts-autotag').setup()
+    end
+  }
   --   {
   --   "jackMort/ChatGPT.nvim",
   --     event = "VeryLazy",
